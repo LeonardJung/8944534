@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-const Header = (props) => {
+const Header = ({ onAdd, showAdd }) => {
   const onClick = () => {
     console.log("click");
   };
@@ -9,7 +9,11 @@ const Header = (props) => {
   return (
     <header className="header">
       <h1>Task Tracker</h1>
-      <Button color="green" text="Add" onClick={onClick} />
+      <Button
+        color={showAdd ? "blue" : "green"}
+        text={showAdd ? "Close" : "Add"}
+        onClick={onAdd}
+      />
     </header>
   );
 };

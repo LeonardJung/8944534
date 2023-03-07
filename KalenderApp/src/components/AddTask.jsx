@@ -45,7 +45,7 @@ const AddTask = ({ onAdd }) => {
         type="submit"
         value="Save Task"
         className="btn btn-block"
-        style={{ backgroundColor: "blue" }}
+        style={{ backgroundColor: "green" }}
       />
     </form>
   );
