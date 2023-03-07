@@ -2,8 +2,9 @@ import React from "react";
 
 const Header = (props) => {
   return (
-    <header>
-      <h1>{props.title}</h1>
+    <header className="header">
+      <h1>Task Tracker</h1>
+      <button className="btn">Add</button>
     </header>
   );
 };
