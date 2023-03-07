@@ -2,25 +2,31 @@ import { useState } from "react";
 import Header from "./components/Header";
 import "./App.css";
 import Tasks from "./components/Tasks";
+import AddTask from "./components/AddTask";
 
 function App() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      text: "Task 1",
-      day: "March 7.",
+      task: "Task 1",
+      description: "March 7.",
     },
     {
       id: 2,
-      text: "Task 2",
-      day: "March 8.",
+      task: "Task 2",
+      description: "March 8.",
     },
     {
       id: 3,
-      text: "Task 3",
-      day: "March 9.",
+      task: "Task 3",
+      description: "March 9.",
     },
   ]);
+
+  //Add Task
+  const addTask = (task) => {
+    console.log(task);
+  };
 
   //Delete Task
   const deleteTask = (id) => {
@@ -30,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <AddTask onAdd={addTask} />
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} />
       ) : (

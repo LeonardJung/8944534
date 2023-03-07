@@ -5,13 +5,13 @@ const Task = ({ task, onDelete }) => {
   return (
     <div className="task">
       <h3>
-        {task.text}{" "}
+        {task.task}{" "}
         <FaTimes
           style={{ cursor: "pointer" }}
           onClick={() => onDelete(task.id)}
         />
       </h3>
-      <p>{task.day}</p>
+      <p>{task.description}</p>
     </div>
   );
 };
