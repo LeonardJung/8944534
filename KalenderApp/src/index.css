@@ -44,3 +44,10 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
+.task {
+  background: #676767;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
