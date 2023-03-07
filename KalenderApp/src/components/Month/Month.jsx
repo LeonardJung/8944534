@@ -1,10 +1,11 @@
 import React from "react";
 import "./Month.css";
+import Toolbar from "./toolbar/toolbar";
 
 function Month() {
   return (
     <div>
-      <h1>Hallo Weltt</h1>
+      <Toolbar />
     </div>
   );
 }
