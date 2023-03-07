@@ -12,3 +12,23 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+.topbar {
+  width: 700px;
+  min-height: 30px;
+  border: 1px solid steelblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.col-span-3 {
+  grid-column: span 3;
+}

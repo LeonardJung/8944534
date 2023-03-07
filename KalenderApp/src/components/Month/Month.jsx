@@ -1,11 +1,16 @@
 import React from "react";
 import "./Month.css";
-import Toolbar from "./toolbar/toolbar";
 
 function Month() {
   return (
-    <div>
-      <Toolbar />
+    <div className="topbar">
+      <div className="columns">
+        <div>{"<<"}</div>
+        <div>{"<"}</div>
+        <div className="col-span-3">August 2022</div>
+        <div>{">"}</div>
+        <div>{">>"}</div>
+      </div>
     </div>
   );
 }
