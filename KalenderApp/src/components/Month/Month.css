@@ -31,4 +31,19 @@ body {
 
 .col-span-3 {
   grid-column: span 3;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.border {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
