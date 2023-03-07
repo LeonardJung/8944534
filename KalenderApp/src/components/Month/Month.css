@@ -1,3 +1,4 @@
+/*Styles for the root element, which is used to center and set a maximum width for the application.*/
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,6 +6,7 @@
   text-align: center;
 }
 
+/*Styles for the body element, which is set to flex display with center items to center the application horizontally and vertically.*/
 body {
   margin: 0;
   display: flex;
@@ -13,7 +15,8 @@ body {
   min-height: 100vh;
 }
 
-.topbar {
+/*Styles for the month view, which is a container for the month calendar display.*/
+.month-view {
   width: 700px;
   min-height: 30px;
   border: 1px solid steelblue;
@@ -21,6 +24,7 @@ body {
   border-radius: 5px;
 }
 
+/*Styles for the grid columns in the month view, which are set to grid display with 7 equal width columns (one for each day of the week).*/
 .columns {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -29,6 +33,7 @@ body {
   text-align: center;
 }
 
+/*Styles for the month view column that spans 3 columns, which is used for the month display.*/
 .col-span-3 {
   grid-column: span 3;
   height: 3rem;
@@ -39,6 +44,7 @@ body {
   border-right: 1px solid #ccc;
 }
 
+/*Styles for the month view border columns, which are used for the day of the week display and the navigation buttons.*/
 .border {
   height: 3rem;
   display: flex;

@@ -6,9 +6,9 @@ const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 function Month() {
   return (
-    <div className="topbar">
+    <div className="month-view">
       <div className="columns">
-        <div className="border">{"<<"}</div>
+        <div className="border">{"<1<"}</div>
         <div className="border">{"<"}</div>
         <div className="col-span-3">März 2023</div>
         <div className="border">{">"}</div>

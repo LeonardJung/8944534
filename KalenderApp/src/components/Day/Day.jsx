@@ -5,7 +5,10 @@ import AddTask from "./components/AddTask";
 import "./Day.css";
 
 function Day() {
+  // State for showing/hiding the "Add Task" form
   const [showAddTask, setShowAddTask] = useState(false);
+
+  // State for storing the list of tasks
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -22,25 +25,28 @@ function Day() {
     },
   ]);
 
-  //Add Task
+  // Function for adding a new task to the list
   const addTask = (task) => {
     const id = Math.floor(Math.random() * 10000) + 1;
     const newTask = { id, ...task };
     setTasks([...tasks, newTask]);
   };
 
-  //Delete Task
+  // Function for deleting a task from the list
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
   return (
     <div className="App">
+      {/* Header component with button for showing/hiding "Add Task" form */}
       <Header
         onAdd={() => setShowAddTask(!showAddTask)}
         showAdd={showAddTask}
       />
+      {/* "Add Task" form (conditionally rendered) */}
       {showAddTask && <AddTask onAdd={addTask} />}
+      {/* Displayes text when no Task availabal*/}
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete={deleteTask} />
       ) : (
