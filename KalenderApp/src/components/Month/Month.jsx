@@ -2,7 +2,7 @@ import React from "react";
 import "./Month.css";
 import Cells from "./Cells";
 
-const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 function Month() {
   return (
@@ -10,14 +10,17 @@ function Month() {
       <div className="columns">
         <div className="border">{"<<"}</div>
         <div className="border">{"<"}</div>
-        <div className="col-span-3">August 2022</div>
+        <div className="col-span-3">März 2023</div>
         <div className="border">{">"}</div>
         <div className="border">{">>"}</div>
 
         {daysOfWeek.map((day) => (
-          <Cells>{day}</Cells>
+          <div className="border">{day}</div>
         ))}
 
+        <Cells></Cells>
+        <Cells></Cells>
+        <Cells></Cells>
         <Cells>1</Cells>
         <Cells>2</Cells>
         <Cells>3</Cells>

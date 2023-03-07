@@ -1,7 +1,7 @@
 import React from "react";
 
 function Cells({ children }) {
-  return <div className="border">{children}</div>;
+  return <button className="border">{children}</button>;
 }
 
 export default Cells;
